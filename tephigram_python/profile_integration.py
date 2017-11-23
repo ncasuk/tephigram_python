@@ -8,7 +8,7 @@ from collections import namedtuple
 
 from attrdict import AttrDict
 
-import parameterisations
+from tephigram_python import parameterisations
 
 default_constants = AttrDict({
     "R_d": 287.05,
@@ -66,7 +66,7 @@ class Var:
 
     @staticmethod
     def print_formatted(v, formatting='%g'):
-        print ",\t".join([("%s=" + formatting) % (Var.names[i], v[i]) for i in range(Var.NUM)])
+        print(",\t".join([("%s=" + formatting) % (Var.names[i], v[i]) for i in range(Var.NUM)]))
 
     @staticmethod
     def repr(v, formatting='%g', skip=[]):

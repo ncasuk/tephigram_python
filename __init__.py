@@ -1,1 +1,1 @@
-from tephigram_plotter import Tephigram
+from tephigram_python import Tephigram
